@@ -1,0 +1,62 @@
+/* General styles for the registration container */
+.register-container {
+    max-width: 400px; /* Set a max width for the form */
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    padding: 30px; /* Add padding around the container */
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for depth */
+    font-family: Arial, sans-serif; /* Use a professional sans-serif font */
+  }
+  
+  /* Heading styles */
+  .register-container h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 28px; /* Font size for the heading */
+    color: #333; /* Dark color for text */
+  }
+  
+  /* Form element styles */
+  .register-container form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Input field styles */
+  .register-container input {
+    padding: 12px; /* Space inside the input fields */
+    margin: 10px 0; /* Space above and below input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px; /* Font size for input text */
+    width: 100%; /* Full width for input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  /* Button styles */
+  .register-container button {
+    padding: 12px; /* Space inside the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  /* Button hover effect */
+  .register-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Error message styles */
+  .error {
+    color: red; /* Red color for error messages */
+    font-size: 14px; /* Font size for error messages */
+    margin: 10px 0; /* Space above and below error messages */
+    text-align: center; /* Center the error message */
+  }
+  

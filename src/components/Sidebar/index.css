@@ -1,0 +1,85 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease; /* Slide in/out transition */
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  margin-bottom: 15px;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+}
+
+.sidebar-link:hover,
+.sidebar-item.active .sidebar-link {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  display: inline-block;
+  color: #dbab44;
+}
+
+.sidebar-item.active .sidebar-link {
+  background-color: #555;
+  font-weight: bold;
+}
+
+/* Hide sidebar for mobile screens */
+@media only screen and (max-width: 850px) {
+  .sidebar {
+    transform: translateX(-100%); /* Hidden by default */
+  }
+
+  .sidebar.visible {
+    transform: translateX(0); /* Show sidebar when visible */
+  }
+
+  .sidebar.hidden {
+    transform: translateX(-100%); /* Hide sidebar when not visible */
+  }
+
+  /* Toggle button */
+  .toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 29px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is above other elements */
+  }
+}

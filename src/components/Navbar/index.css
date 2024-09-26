@@ -1,0 +1,133 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  height: 60px; 
+  position: fixed;
+  top: 0;
+  left: 250px; 
+  width: calc(100% - 290px); 
+  z-index: 1000; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Search Bar Styles */
+.search_bar {
+  display: flex; 
+  align-items: center; 
+  margin-left: 40%;
+  flex-grow: 1; /* Allow search bar to grow */
+}
+
+.search_bar input {
+  padding: 10px 10px 9px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  width: 300px; /* Full width */
+  height: 20px;
+}
+
+.search_bar button {
+  padding: 7px; /* Adjust padding */
+  background-color: #484a43; 
+  color: white; 
+  border: none; 
+  border-radius: 0 4px 4px 0; 
+  cursor: pointer; 
+  font-size: 21px; 
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.search_bar button:hover {
+  background-color: #555; 
+}
+
+/* Action Button Styles */
+.actions {
+  display: flex; 
+  align-items: center; 
+}
+
+.actions button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5d93b5; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-left: 30px; 
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.actions button:hover {
+  background-color: #244357; 
+}
+
+/* Logout Button Styles */
+.logout-button {
+  background-color: #e82222; 
+  color: white; 
+  font-weight: bold; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.logout-button:hover {
+  background-color: #700f0f; 
+}
+@media only screen and (max-width: 900px) {
+  .search_bar{
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .search_bar {
+    display: flex; 
+    align-items: center; 
+    margin-left: 0;
+  }
+  .search_bar input {
+    padding: 10px 10px 9px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 150px; /* Full width */
+    height: 10px;
+  }
+  
+  .search_bar button {
+    padding: 6px; /* Adjust padding */
+    background-color: #484a43; 
+    color: white; 
+    border: none; 
+    border-radius: 0 4px 4px 0; 
+    cursor: pointer; 
+    font-size: 15px; 
+    transition: background-color 0.3s; /* Smooth hover transition */
+  }
+  .logout-button {
+    display: none;
+  }
+  .actions button {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+
+}
